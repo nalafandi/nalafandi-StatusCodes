@@ -12,8 +12,8 @@ public class JavalinSingleton {
      * Please refer to the "StatusCodes.MD" file.
      */
     public static Javalin getInstance(){
-        Javalin app = Javalin.create();        
-
+        Javalin app = Javalin.create();
+        
         app.get("/client-side-err", ctx -> {        
             ctx.status(400);            
         });
