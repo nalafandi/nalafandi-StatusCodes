@@ -15,12 +15,9 @@ public class JavalinSingleton {
         Javalin app = Javalin.create();
         
 
-        app.get("/client-side-err", ctx -> {
-        
-            ctx.status(400);
-            
+        app.get("/client-side-err", ctx -> {        
+            ctx.status(400);            
         });
-
         return app;
     }
     
