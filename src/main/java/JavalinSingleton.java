@@ -13,7 +13,7 @@ public class JavalinSingleton {
      */
     public static Javalin getInstance(){
         Javalin app = Javalin.create();
-        
+                        
         app.get("/client-side-err", ctx -> {        
             ctx.status(400);            
         });
